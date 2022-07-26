@@ -3,7 +3,7 @@
         "browser": true,
         "es2021": true
     },
-    "settings": { 
+    "settings": {
         "react": {
             "version": "detect"
         }
@@ -28,6 +28,12 @@
         "prettier"
     ],
     "rules": {
-        "prettier/prettier": "error"
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ],
+        "react/react-in-jsx-scope": "off"
     }
 }
